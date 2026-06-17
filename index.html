@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas Cloud - UAB FIT</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <div class="overlay">
+
+            <h1>
+                <i class="fa-solid fa-cloud"></i>
+                Tareas Colaborativas en Tiempo Real
+            </h1>
+
+            <p class="subtitulo">
+                Cloud Computing • UAB FIT • Tecnologías Emergentes
+            </p>
+
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+
+        <section class="card formulario">
+
+            <h2>
+                <i class="fa-solid fa-circle-plus"></i>
+                Nueva Tarea
+            </h2>
+
+            <div class="grupo-input">
+
+                <label>Título de la tarea</label>
+
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Ej. Realizar informe final">
+
+            </div>
+
+            <div class="grupo-input">
+
+                <label>Responsable</label>
+
+                <input
+                    type="text"
+                    id="responsable"
+                    placeholder="Nombre del responsable">
+
+            </div>
+
+            <button class="btn-agregar" onclick="agregarTarea()">
+
+                <i class="fa-solid fa-plus"></i>
+                Agregar Tarea
+
+            </button>
+
+        </section>
+
+        <section class="card lista">
+
+            <div class="titulo-lista">
+
+                <h2>
+                    <i class="fa-solid fa-list-check"></i>
+                    Lista de Tareas
+                </h2>
+
+                <span id="contador">(0)</span>
+
+            </div>
+
+            <div id="tareas-container">
+
+                <div class="cargando">
+                    Cargando tareas...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Sistema de Gestión de Tareas Colaborativas |
+            Cloud Computing - UAB FIT
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

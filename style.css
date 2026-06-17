@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.hero h1{
+    font-size:2.2rem;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    font-size:1rem;
+    opacity:.9;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.grupo-input{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+.btn-agregar{
+    width:100%;
+    background:#16a34a;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.btn-agregar:hover{
+    background:#15803d;
+}
+
+.titulo-lista{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+#contador{
+    background:#2563eb;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+}
+
+.tarea{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+
+.completada{
+    border-left:5px solid #16a34a;
+    opacity:.8;
+}
+
+.cargando{
+    text-align:center;
+    color:gray;
+    padding:20px;
+}
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    padding:20px;
+    background:#1e3a8a;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:1.7rem;
+    }
+
+}
